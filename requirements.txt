@@ -1,0 +1,12 @@
+jupyter
+notebook
+ipykernel
+numpy
+pandas
+matplotlib
+seaborn
+statsmodels
+scipy
+scikit-learn
+tensorflow
+pytorch
