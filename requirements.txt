@@ -8,5 +8,6 @@ seaborn
 statsmodels
 scipy
 scikit-learn
-torch
 transformers
+accelerate
+torch
