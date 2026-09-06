@@ -1,10 +1,20 @@
 {
-  "name": "Python Practice",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "customizations": {
-    "vscode": {
-      "extensions": ["ms-python.python", "ms-toolsai.jupyter"]
-    }
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "hostRequirements": {
+    "cpus": 4
   },
-  "postCreateCommand": "pip install -r requirements.txt"
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+  "postCreateCommand": "",
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python"
+      ]
+    }
+  }
 }
